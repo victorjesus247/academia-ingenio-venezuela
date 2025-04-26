@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
     <nav className="bg-white shadow-sm py-4 sticky top-0 z-50">
       <div className="container-custom flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <span className="font-heading font-bold text-2xl text-ingenio-blue">
+          <span className="font-heading font-bold text-xl sm:text-2xl text-ingenio-blue">
             INGENIO<span className="text-ingenio-green">ACADEMY</span>
           </span>
         </Link>
@@ -38,7 +38,9 @@ const Navbar: React.FC = () => {
               {item.name}
             </Link>
           ))}
-          <Button className="btn-primary">Clase Gratis</Button>
+          <Link to="/agendar">
+            <Button className="btn-primary">Clase Gratis</Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -53,7 +55,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-white absolute top-full left-0 w-full shadow-md animate-fade-in">
+        <div className="md:hidden bg-white absolute top-full left-0 w-full shadow-md animate-fade-in z-50">
           <div className="container-custom py-4 flex flex-col gap-4">
             {menuItems.map((item) => (
               <Link
@@ -65,7 +67,9 @@ const Navbar: React.FC = () => {
                 {item.name}
               </Link>
             ))}
-            <Button className="btn-primary w-full">Clase Gratis</Button>
+            <Link to="/agendar" onClick={() => setIsOpen(false)}>
+              <Button className="btn-primary w-full">Clase Gratis</Button>
+            </Link>
           </div>
         </div>
       )}

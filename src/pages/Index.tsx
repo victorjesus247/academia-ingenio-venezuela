@@ -23,13 +23,13 @@ const Index: React.FC = () => {
             con explicaciones claras y material práctico.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link to="/agendar">
-              <Button size="lg" className="bg-white text-ingenio-blue hover:bg-gray-100 w-full sm:w-auto">
+            <Link to="/agendar" className="w-full sm:w-auto">
+              <Button size="lg" className="bg-white text-ingenio-blue hover:bg-gray-100 w-full">
                 Agenda tu Primera Clase Gratis
               </Button>
             </Link>
-            <Link to="/cursos">
-              <Button size="lg" className="bg-transparent border border-white hover:bg-white/10 w-full sm:w-auto">
+            <Link to="/cursos" className="w-full sm:w-auto">
+              <Button size="lg" className="bg-transparent border border-white hover:bg-white/10 w-full">
                 Explora Nuestros Cursos
               </Button>
             </Link>
@@ -54,6 +54,8 @@ const Index: React.FC = () => {
                 <a 
                   href="https://wa.me/584141234567" 
                   className="flex items-center gap-2 text-ingenio-blue hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -93,12 +95,12 @@ const Index: React.FC = () => {
               </div>
             </div>
             
-            <div className="relative">
+            <div className="relative mt-8 md:mt-0">
               <div className="absolute -z-10 w-full h-full bg-ingenio-green/10 rounded-lg rotate-3"></div>
               <img
                 src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80"
                 alt="Estudiante en clase"
-                className="rounded-lg shadow-md"
+                className="rounded-lg shadow-md w-full"
               />
             </div>
           </div>
