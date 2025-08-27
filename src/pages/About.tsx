@@ -31,7 +31,7 @@ const About: React.FC = () => {
             compartir su conocimiento, hay un lugar para ti en Ingenio Academy.
           </p>
           <a
-            href="https://wa.me/584141234567"
+            href="https://wa.me/584249029639"
             className="inline-block bg-white text-ingenio-blue font-semibold rounded-md px-8 py-3 hover:bg-gray-100 transition duration-300"
           >
             Contáctanos

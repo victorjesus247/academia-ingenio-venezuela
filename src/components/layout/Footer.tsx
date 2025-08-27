@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/raiz.cuadrada_academy/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-ingenio-darkgray hover:text-ingenio-blue transition-colors"
@@ -133,10 +133,10 @@ const Footer: React.FC = () => {
               <li className="flex items-center gap-2">
                 <Phone size={16} className="text-ingenio-blue" />
                 <a
-                  href="https://wa.me/584141234567"
+                  href="https://wa.me/584249029639"
                   className="text-gray-600 hover:text-ingenio-blue transition-colors"
                 >
-                  +58 414-123-4567 (WhatsApp)
+                  +58 4249029639 (WhatsApp)
                 </a>
               </li>
             </ul>

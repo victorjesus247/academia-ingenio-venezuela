@@ -69,8 +69,8 @@ const Booking: React.FC = () => {
                   <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
                 <span>
-                  Las clases pueden ser presenciales (en áreas seleccionadas de
-                  Caracas) o virtuales a través de Zoom o Google Meet.
+                  Las clases pueden ser presenciales (en áreas seleccionadas
+                  ) o virtuales a través de Zoom o Google Meet.
                 </span>
               </li>
               <li className="flex items-start gap-2">

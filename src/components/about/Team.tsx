@@ -12,11 +12,11 @@ interface TeamMemberProps {
 const TeamMember: React.FC<TeamMemberProps> = ({ name, role, bio, image }) => {
   return (
     <Card className="overflow-hidden border-0 shadow-sm card-hover">
-      <div className="h-48 overflow-hidden">
+      <div className="h-50 overflow-hidden" /*h-50 es altura de la imagen del div */>    
         <img
           src={image}
           alt={name}
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-center "/*w-full es width full h-full es la altura full */
         />
       </div>
       <CardContent className="pt-6">
@@ -30,28 +30,28 @@ const TeamMember: React.FC<TeamMemberProps> = ({ name, role, bio, image }) => {
 
 const teamMembers = [
   {
-    name: "Alejandro Torres",
-    role: "Fundador - Ing. Sistemas",
-    bio: "Estudiante de 4to año con pasión por compartir conocimiento. Especialista en programación y matemáticas aplicadas.",
-    image: "https://i.pravatar.cc/300?img=12",
+    name: "Victor Lefebres",
+    role: "Fundador - Est. de Ingenieria Electronica / Informatica",
+    bio: "Especialista en Programacion y matematicas aplicadas a Redes Neuronales. Comprometido con compartir conocimiento para la creacion de nuevas tecnologias.",
+    image: "img/victor.png",
   },
   {
-    name: "Gabriela Méndez",
-    role: "Co-Fundadora - Ing. Química",
-    bio: "Excelencia académica y experiencia en termodinámica y química orgánica. Comprometida con hacer que la ciencia sea accesible para todos.",
-    image: "https://i.pravatar.cc/300?img=27",
+    name: "Manuel Vegas",
+    role: "Fundador - Est. de Ingenieria Industrial",
+    bio: "Excelencia académica y experiencia en termodinámica. Mi objetivo es hacer que la ciencia sea accesible para todos.",
+    image: "img/manuel.png",
   },
   {
-    name: "Daniel Ramírez",
-    role: "Co-Fundador - Ing. Civil",
-    bio: "Apasionado por las estructuras y la física aplicada. Busca ayudar a estudiantes a superar los desafíos más complejos de ingeniería.",
-    image: "https://i.pravatar.cc/300?img=13",
+    name: "Hector Camacho",
+    role: "Co-Fundador - Est. de Ingenieria Mecanica y Ciencias Numericas",
+    bio: "Apasionado por las Matematicas a nivel de calculo, analisis y la física aplicada. Busco ayudar a estudiantes a superar los desafíos más complejos de ingeniería.",
+    image: "img/hector.png",
   },
   {
-    name: "Valentina Castro",
-    role: "Directora Académica - Ing. Eléctrica",
-    bio: "Creadora del programa de estudio. Especialista en circuitos y sistemas de control con un don para explicar conceptos difíciles.",
-    image: "https://i.pravatar.cc/300?img=32",
+    name: "Samuel Lobo",
+    role: "Miembro Principal - Est. de ingenieria Mecanica",
+    bio: "Creador del programa de estudio. Especialista en termodinamica y pre-calculo con un don para explicar conceptos difíciles.",
+    image: "img/samuel.png",
   },
 ];
 

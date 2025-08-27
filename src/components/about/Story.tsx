@@ -46,7 +46,7 @@ const Story: React.FC = () => {
                 Hoy, Ingenio Academy se ha convertido en un espacio donde
                 estudiantes ayudan a estudiantes, combinando la experiencia
                 académica con la comprensión de los desafíos particulares que
-                enfrentamos en nuestro país.
+                enfrentamos en nuestras carreras.
               </p>
             </div>
 

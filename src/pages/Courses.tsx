@@ -35,7 +35,7 @@ const Courses: React.FC = () => {
             adecuado para ti.
           </p>
           <a
-            href="https://wa.me/584141234567"
+            href="https://wa.me/584249029639"
             className="btn-primary inline-block"
           >
             Solicitar Curso Personalizado

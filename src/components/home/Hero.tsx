@@ -14,8 +14,8 @@ const Hero: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div className="order-2 lg:order-1">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-ingenio-blue tracking-tight mb-6">
-              Impulsa tu Éxito Académico en{" "}
-              <span className="text-ingenio-green">Ingeniería</span>
+              Impulsa tu Exito Académico con nosotros en{" "} 
+              <span className="text-ingenio-green">Ingeniería !</span>
             </h1>
             
             <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-8">

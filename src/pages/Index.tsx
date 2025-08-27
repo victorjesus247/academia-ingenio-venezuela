@@ -52,7 +52,7 @@ const Index: React.FC = () => {
               </p>
               <div className="space-y-4">
                 <a 
-                  href="https://wa.me/584141234567" 
+                  href="https://wa.me/584249029639" 
                   className="flex items-center gap-2 text-ingenio-blue hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
