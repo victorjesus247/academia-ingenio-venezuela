@@ -4,12 +4,10 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
+
 export default defineConfig(({ mode }) => ({
-  // Añade esta línea para resolver el error de despliegue
-  // Using a relative base path is often simpler for GitHub Pages and can
-  // resolve build issues like the one you're seeing.
-  base: "./",
+
+  base: "/",
   server: {
     host: "::",
     port: 8080,
