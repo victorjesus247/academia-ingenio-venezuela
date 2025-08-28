@@ -7,7 +7,7 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   // Añade esta línea para resolver el error de despliegue
-  //base: "/academia-ingenio-venezuela", 
+  //base: "/academia-ingenio-venezuela.", 
   
   server: {
     host: "::",
