@@ -7,8 +7,9 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   // Añade esta línea para resolver el error de despliegue
-  base: "/academia-ingenio-venezuela/", 
-  
+  // Using a relative base path is often simpler for GitHub Pages and can
+  // resolve build issues like the one you're seeing.
+  base: "./",
   server: {
     host: "::",
     port: 8080,
