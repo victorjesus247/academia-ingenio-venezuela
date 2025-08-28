@@ -26,16 +26,15 @@ jobs:
       - name: Install Dependencies 📦
         run: npm install
 
-      - name: List files for debugging
-        run: ls -la
       # 4. "Hornea" o construye el proyecto para producción
-      - name: Build 
+      - name: Build 🏗️
         run: npm run build
 
-    # 5. Sube el resultado a la rama especial de GitHub Pages (gh-pages)
+      # 5. Sube el resultado a la rama especial de GitHub Pages (gh-pages)
       - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # Cambia "public" por "dist"
-          publish_dir: ./dist 
+          # Esta es la carpeta que contiene la "torta horneada" (el sitio ya construido)
+          # Para proyectos como el tuyo (Remix/React), suele ser la carpeta "public"
+          publish_dir: ./public
