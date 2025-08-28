@@ -27,7 +27,7 @@ jobs:
         run: npm install
 
       # 4. "Hornea" o construye el proyecto para producción
-      - name: Build 🏗️
+      - name: Build 
         run: npm run build
 
       # 5. Sube el resultado a la rama especial de GitHub Pages (gh-pages)
