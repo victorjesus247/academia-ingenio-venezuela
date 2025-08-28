@@ -1,0 +1,40 @@
+# Nombre del "robot" o flujo de trabajo
+name: Deploy to GitHub Pages
+
+# Cuándo se debe ejecutar: cada vez que subas cambios a tu rama principal (main)
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    # Usará una computadora virtual con Ubuntu para hacer el trabajo
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Descarga tu código del repositorio
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      # 2. Instala Node.js, que es necesario para construir el proyecto
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Usamos una versión reciente y estable de Node.js
+          cache: 'npm'
+
+      # 3. Instala todas las "herramientas" (dependencias de node_modules)
+      - name: Install Dependencies 📦
+        run: npm install
+
+      # 4. "Hornea" o construye el proyecto para producción
+      - name: Build 🏗️
+        run: npm run build
+
+      # 5. Sube el resultado a la rama especial de GitHub Pages (gh-pages)
+      - name: Deploy 🚀
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Esta es la carpeta que contiene la "torta horneada" (el sitio ya construido)
+          # Para proyectos como el tuyo (Remix/React), suele ser la carpeta "public"
+          publish_dir: ./public
