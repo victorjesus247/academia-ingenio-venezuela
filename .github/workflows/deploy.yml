@@ -26,6 +26,8 @@ jobs:
       - name: Install Dependencies 📦
         run: npm install
 
+      - name: List files for debugging
+        run: ls -la
       # 4. "Hornea" o construye el proyecto para producción
       - name: Build 
         run: npm run build
