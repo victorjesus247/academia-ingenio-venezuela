@@ -45,7 +45,7 @@ const teamMembers = [
     name: "Hector Camacho",
     role: "Co-Fundador - Est. de Ingenieria Mecanica y Ciencias Numericas",
     bio: "Apasionado por las Matematicas a nivel de calculo, analisis y la física aplicada. Busco ayudar a estudiantes a superar los desafíos más complejos de ingeniería.",
-    image: "/img/hector.png",
+    image: "img/hector.png",
   },
   {
     name: "Samuel Lobo",
