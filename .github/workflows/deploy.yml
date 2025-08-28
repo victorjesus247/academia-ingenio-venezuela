@@ -36,5 +36,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # Esta es la carpeta que contiene la "torta horneada" (el sitio ya construido)
-          # Para proyectos como el tuyo (Remix/React), suele ser la carpeta "public" a ver
-          publish_dir: ./public
+          # Para proyectos como el tuyo (Remix/React), suele ser la carpeta "public" a ver eran los permisos de action
+          publish_dir: ./dist
